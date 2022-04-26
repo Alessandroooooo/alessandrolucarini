@@ -275,9 +275,9 @@ textarea {
   box-sizing: border-box;
   position: fixed;
   padding: 20px 40px 50px 40px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5),
+  /*box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5),
     1px 2px 4px 0px rgba(0, 0, 0, 0.5), 2px 4px 8px 0px rgba(0, 0, 0, 0.5),
-    2px 4px 16px 0px rgba(0, 0, 0, 0.5);
+    2px 4px 16px 0px rgba(0, 0, 0, 0.5);*/
 }
 
 a:visited {
@@ -321,8 +321,8 @@ a:hover {
   height: 30px;
   width: 30px;
   border-radius: 15px;
-  border: 3px solid rgb(0, 128, 0);
-  color: rgb(0, 128, 0);
+  border: 3px solid #222;
+  color: #222;
   cursor: pointer;
 }
 
@@ -341,7 +341,11 @@ a:hover {
   z-index: 99;
   background-color: whitesmoke;
   /*border: 3px solid black;*/
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5),
+  font-family: "Porpora-Regular";
+  font-size: 15px;
+  line-height: 1.4;
+  color: #222;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5),
     1px 2px 4px 0px rgba(0, 0, 0, 0.5), 2px 4px 8px 0px rgba(0, 0, 0, 0.5),
     2px 4px 16px 0px rgba(0, 0, 0, 0.5);
 }
