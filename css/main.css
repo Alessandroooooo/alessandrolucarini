@@ -11,24 +11,25 @@
    Base styles: opinionated defaults
    ========================================================================== */
 @font-face {
+  font-family: Karrik-Regular;
+  src: url(../fonts/Karrik-Regular.woff);
+}
+
+@font-face {
   font-family: Necto;
   src: url(../fonts/Necto-Mono.woff);
 }
 
-@font-face {
-  font-family: Porpora-Regular;
-  src: url(../fonts/Porpora-Regular.woff);
-}
-
 body {
   background-color: whitesmoke;
-  font-family: Necto;
+  font-family: Karrik;
 }
 
 html {
-  color: #222;
-  font-size: 16px;
+  color: #00a00c;
+  font-size: 17px;
   line-height: 1.45;
+
 }
 
 /*
@@ -42,7 +43,8 @@ html {
  */
 
 ::selection {
-  color: rgb(255, 69, 0);
+  color: whitesmoke;
+  background: #222;
 }
 
 /*
@@ -281,11 +283,11 @@ textarea {
 }
 
 a:visited {
-  color: rgb(0, 128, 0);
+  color: #222;
 }
 
 a:hover {
-  color: #ff4500;
+  color: #222;
 }
 
 #pres img {
@@ -321,8 +323,8 @@ a:hover {
   height: 30px;
   width: 30px;
   border-radius: 15px;
-  border: 3px solid #222;
-  color: #222;
+  border: 3px solid #00a00c;
+  color: #00a00c;
   cursor: pointer;
 }
 
@@ -341,9 +343,9 @@ a:hover {
   z-index: 99;
   background-color: whitesmoke;
   /*border: 3px solid black;*/
-  font-family: "Porpora-Regular";
-  font-size: 15px;
-  line-height: 1.4;
+  font-family: "Necto";
+  font-size: 14px;
+  line-height: 1.5;
   color: #222;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5),
     1px 2px 4px 0px rgba(0, 0, 0, 0.5), 2px 4px 8px 0px rgba(0, 0, 0, 0.5),
@@ -355,11 +357,12 @@ a:hover {
 }
 
 .info {
-  font-family: "Porpora-Regular";
-  font-size: 15px;
+  font-family: "Necto";
+  font-size: 13px;
   line-height: 0.5;
-  color: #767676;
-}
+  color: #222;
+  
+  }
 
 #pres a {
   text-decoration: underline;

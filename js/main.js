@@ -35,10 +35,10 @@ const showModal = (prop, elem) => {
   if (document.getElementById(prop).style.display != "block") {
     document.getElementById(prop).style.display = "block";
     elem.style.backgroundColor = "#222";
-    elem.style.color = "white";
+    elem.style.color = "#00a00c";
   } else {
     document.getElementById(prop).style.display = "none";
     elem.style.backgroundColor = "white";
-    elem.style.color = "#222";
+    elem.style.color = "#00a00c";
   }
 };
