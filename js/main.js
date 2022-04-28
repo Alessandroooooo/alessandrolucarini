@@ -34,8 +34,8 @@ const clickity = (prop) => {
 const showModal = (prop, elem) => {
   if (document.getElementById(prop).style.display != "block") {
     document.getElementById(prop).style.display = "block";
-    elem.style.backgroundColor = "#222";
-    elem.style.color = "#00a00c";
+    elem.style.backgroundColor = "#00a00c";
+    elem.style.color = "#222";
   } else {
     document.getElementById(prop).style.display = "none";
     elem.style.backgroundColor = "white";
