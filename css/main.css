@@ -277,10 +277,7 @@ textarea {
   box-sizing: border-box;
   position: fixed;
   padding: 20px 40px 50px 40px;
-  /*box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5),
-    1px 2px 4px 0px rgba(0, 0, 0, 0.5), 2px 4px 8px 0px rgba(0, 0, 0, 0.5),
-    2px 4px 16px 0px rgba(0, 0, 0, 0.5);*/
-}
+  }
 
 a:visited {
   color: #222;
@@ -301,10 +298,115 @@ a:hover {
 }
 
 #works img {
-  max-height: 500px;
+  max-height: 600px;
 }
 
 .carousel-wrapper {
+  position: relative;
+}
+
+.caption-wrapper {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.carousel-caption {
+  margin-bottom: 60px;
+}
+
+.caption-wrapper > button {
+  margin-top: 1em;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  border: 3px solid #00a00c;
+  color: #00a00c;
+  cursor: pointer;
+}
+
+.caption-wrapper > .carousel-caption {
+  float: left;
+}
+
+.carousel-modal {
+  position: absolute !important;
+  max-width: 600px;
+  border-radius: 15px;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px;
+  display: none;
+  z-index: 99;
+  background-color: whitesmoke;
+  border: 5px solid #00a00c;
+  font-family: "Necto";
+  font-size: 14px;
+  line-height: 1.5;
+  color: #222;
+    /*box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5),
+    1px 2px 4px 0px rgba(0, 0, 0, 0.5), 2px 4px 8px 0px rgba(0, 0, 0, 0.5),
+    2px 4px 16px 0px rgba(0, 0, 0, 0.5);*/
+}
+
+.material-icons {
+  font-size: 15px !important;
+}
+
+.info {
+  font-family: "Necto";
+  font-size: 13px;
+  line-height: 0.5;
+  color: #222;
+  
+  }
+
+#pres a {
+  text-decoration:#222 wavy underline;
+  cursor: pointer;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+      background-color: whitesmoke;
+    font-family: Karrik;
+  }
+
+  html {
+    color: #00a00c;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+  
+  #pres {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 20px 40px 20px 40px;
+  }
+    
+  #pres img {
+  max-width: 65%;
+}
+      
+
+ #works {
+  box-sizing: border-box;
+  margin-left: 0;
+  padding: 40px;
+}
+
+ #works img {
+  width: 100%;
+}    
+  
+  .carousel-wrapper {
   position: relative;
 }
 
@@ -347,10 +449,7 @@ a:hover {
   font-size: 14px;
   line-height: 1.5;
   color: #222;
-    /*box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5),
-    1px 2px 4px 0px rgba(0, 0, 0, 0.5), 2px 4px 8px 0px rgba(0, 0, 0, 0.5),
-    2px 4px 16px 0px rgba(0, 0, 0, 0.5);*/
-}
+    }
 
 .material-icons {
   font-size: 15px !important;
@@ -358,13 +457,14 @@ a:hover {
 
 .info {
   font-family: "Necto";
-  font-size: 13px;
+  font-size: 15px;
   line-height: 0.5;
   color: #222;
   
-  }
-
-#pres a {
-  text-decoration: underline;
-  cursor: pointer;
-}
+  }    
+      
+      
+      
+      
+      
+    }
