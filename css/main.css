@@ -371,7 +371,7 @@ a:hover {
 
 
 
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 600px) {
   body {
       background-color: whitesmoke;
     font-family: Karrik;
