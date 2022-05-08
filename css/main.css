@@ -399,7 +399,8 @@ iframe {
   }
 
   #pres a {
-    text-decoration: #222 underline;
+    text-decoration: underline;
+    text-decoration-color: #222;
     cursor: pointer;
   }
 
