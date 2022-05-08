@@ -362,7 +362,7 @@ a:hover {
   }
 
 #pres a {
-  text-decoration:#222 wavy underline;
+  text-decoration:#222 underline;
   cursor: pointer;
 }
 
