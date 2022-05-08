@@ -12,24 +12,23 @@
    ========================================================================== */
 @font-face {
   font-family: Karrik-Regular;
-  src: url(../fonts/Karrik-Regular.woff);
+  src: url(../fonts/Karrik-Regular.woff) format("woff");
 }
 
 @font-face {
   font-family: Necto;
-  src: url(../fonts/Necto-Mono.woff);
+  src: url(../fonts/Necto-Mono.woff) format("woff");
 }
 
 body {
   background-color: whitesmoke;
-  font-family: Karrik;
+  font-family: Karrik-Regular;
 }
 
 html {
   color: #00a00c;
   font-size: 17px;
   line-height: 1.45;
-
 }
 
 /*
@@ -277,7 +276,7 @@ textarea {
   box-sizing: border-box;
   position: fixed;
   padding: 20px 40px 50px 40px;
-  }
+}
 
 a:visited {
   color: #222;
@@ -344,7 +343,7 @@ a:hover {
   font-size: 14px;
   line-height: 1.5;
   color: #222;
-    /*box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5),
+  /*box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5),
     1px 2px 4px 0px rgba(0, 0, 0, 0.5), 2px 4px 8px 0px rgba(0, 0, 0, 0.5),
     2px 4px 16px 0px rgba(0, 0, 0, 0.5);*/
 }
@@ -358,23 +357,31 @@ a:hover {
   font-size: 13px;
   line-height: 0.5;
   color: #222;
-  
-  }
-
-#pres a {
-  text-decoration:#222 wavy underline;
-  cursor: pointer;
 }
 
+#pres a {
+  text-decoration: #222 underline;
+  cursor: pointer;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
 
-
-
-
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 @media only screen and (max-width: 600px) {
   body {
-      background-color: whitesmoke;
-    font-family: Karrik;
+    background-color: whitesmoke;
+    font-family: Karrik-Regular;
   }
 
   html {
@@ -382,91 +389,89 @@ a:hover {
     font-size: 20px;
     line-height: 1.45;
   }
-  
+
   #pres {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  position: relative;
-  padding: 10px 20px 20px 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding: 10px 20px 20px 20px;
   }
-    
+
+  #pres a {
+    text-decoration: #222 underline;
+    cursor: pointer;
+  }
+
   #pres img {
-  max-width: 65%;
-}
-      
+    max-width: 65%;
+  }
 
- #works {
-  box-sizing: border-box;
-  margin-left: 0;
-  padding: 0px 20px 20px 20px;
-  font-family: Karrik;
-  font-size: 15px;
-}
+  #works {
+    box-sizing: border-box;
+    margin-left: 0;
+    padding: 0px 20px 20px 20px;
+    font-family: Karrik-Regular;
+    font-size: 15px;
+  }
 
- #works img {
-  width: 100%;
-}    
-  
+  #works img {
+    width: 100%;
+  }
+
   .carousel-wrapper {
-  position: relative;
+    position: relative;
+  }
+
+  .caption-wrapper {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  .carousel-caption {
+    margin-bottom: 60px;
+  }
+
+  .caption-wrapper > button {
+    margin-top: 1em;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    border: 3px solid #00a00c;
+    color: #00a00c;
+    cursor: pointer;
+  }
+
+  .caption-wrapper > .carousel-caption {
+    float: left;
+  }
+
+  .carousel-modal {
+    position: absolute !important;
+    max-width: 600px;
+    border-radius: 15px;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px;
+    display: none;
+    z-index: 99;
+    background-color: whitesmoke;
+    border: 3px solid #00a00c;
+    font-family: "Necto";
+    font-size: 14px;
+    line-height: 1.5;
+    color: #222;
+  }
+
+  .material-icons {
+    font-size: 15px !important;
+  }
+
+  .info {
+    font-family: "Necto";
+    font-size: 15px;
+    line-height: 0.5;
+    color: #222;
+  }
 }
-
-.caption-wrapper {
-  width: 100%;
-  display: inline-flex;
-  justify-content: space-between;
-}
-
-.carousel-caption {
-  margin-bottom: 60px;
-}
-
-.caption-wrapper > button {
-  margin-top: 1em;
-  height: 30px;
-  width: 30px;
-  border-radius: 15px;
-  border: 3px solid #00a00c;
-  color: #00a00c;
-  cursor: pointer;
-}
-
-.caption-wrapper > .carousel-caption {
-  float: left;
-}
-
-.carousel-modal {
-  position: absolute !important;
-  max-width: 600px;
-  border-radius: 15px;
-  bottom: 30px;
-  right: 30px;
-  padding: 10px;
-  display: none;
-  z-index: 99;
-  background-color: whitesmoke;
-  border: 3px solid #00a00c;
-  font-family: "Necto";
-  font-size: 14px;
-  line-height: 1.5;
-  color: #222;
-    }
-
-.material-icons {
-  font-size: 15px !important;
-}
-
-.info {
-  font-family: "Necto";
-  font-size: 15px;
-  line-height: 0.5;
-  color: #222;
-  
-  }    
-      
-      
-      
-      
-      
-    }
