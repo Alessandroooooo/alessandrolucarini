@@ -338,14 +338,11 @@ a:hover {
   display: none;
   z-index: 99;
   background-color: whitesmoke;
-  border: 5px solid #00a00c;
+  border: 2px solid #00a00c;
   font-family: "Necto";
   font-size: 14px;
   line-height: 1.5;
   color: #222;
-  /*box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5),
-    1px 2px 4px 0px rgba(0, 0, 0, 0.5), 2px 4px 8px 0px rgba(0, 0, 0, 0.5),
-    2px 4px 16px 0px rgba(0, 0, 0, 0.5);*/
 }
 
 .material-icons {
@@ -446,23 +443,6 @@ iframe {
 
   .caption-wrapper > .carousel-caption {
     float: left;
-  }
-
-  .carousel-modal {
-    position: absolute !important;
-    max-width: 600px;
-    border-radius: 15px;
-    bottom: 30px;
-    right: 30px;
-    padding: 10px;
-    display: none;
-    z-index: 99;
-    background-color: whitesmoke;
-    border: 3px solid #00a00c;
-    font-family: "Necto";
-    font-size: 14px;
-    line-height: 1.5;
-    color: #222;
   }
 
   .material-icons {

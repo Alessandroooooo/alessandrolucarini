@@ -9,25 +9,6 @@ carousels.forEach((carousel) => {
   });
 });
 
-const clickity = (prop) => {
-  console.log("foi");
-  document.getElementById("publications").style.display = "none";
-  document.getElementById("videos").style.display = "none";
-  document.getElementById("posters").style.display = "none";
-  document.getElementById(prop).style.display = "block";
-
-  const carousels = document.querySelectorAll(".main-carousel");
-
-  carousels.forEach((carousel) => {
-    new Flickity(carousel, {
-      cellAlign: "left",
-      contain: true,
-      freeScroll: true,
-      pageDots: false,
-    });
-  });
-};
-
 const showModal = (prop, elem) => {
   if (document.getElementById(prop).style.display != "block") {
     document.getElementById(prop).style.display = "block";
