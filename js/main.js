@@ -1,12 +1,13 @@
 const carousels = document.querySelectorAll(".main-carousel");
 
 carousels.forEach((carousel) => {
-  new Flickity(carousel, {
+  var flkty = new Flickity(carousel, {
     cellAlign: "left",
     contain: true,
     freeScroll: true,
     pageDots: false,
   });
+  flkty.resize();
 });
 
 const showModal = (prop, elem) => {
@@ -31,12 +32,13 @@ document.getElementById("pub-button").addEventListener(
     const carousels = document.querySelectorAll(".main-carousel");
 
     carousels.forEach((carousel) => {
-      new Flickity(carousel, {
+      var flkty = new Flickity(carousel, {
         cellAlign: "left",
         contain: true,
         freeScroll: true,
         pageDots: false,
       });
+      flkty.resize();
     });
   },
   false
@@ -52,12 +54,13 @@ document.getElementById("vid-button").addEventListener(
     const carousels = document.querySelectorAll(".main-carousel");
 
     carousels.forEach((carousel) => {
-      new Flickity(carousel, {
+      var flkty = new Flickity(carousel, {
         cellAlign: "left",
         contain: true,
         freeScroll: true,
         pageDots: false,
       });
+      flkty.resize();
     });
   },
   false
@@ -73,12 +76,13 @@ document.getElementById("pos-button").addEventListener(
     const carousels = document.querySelectorAll(".main-carousel");
 
     carousels.forEach((carousel) => {
-      new Flickity(carousel, {
+      var flkty = new Flickity(carousel, {
         cellAlign: "left",
         contain: true,
         freeScroll: true,
         pageDots: false,
       });
+      flkty.resize();
     });
   },
   false
