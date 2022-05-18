@@ -357,7 +357,8 @@ a:hover {
 }
 
 #pres a {
-  text-decoration: #222 underline;
+  text-decoration: underline;
+  color: #222;
   cursor: pointer;
 }
 .video-container {
