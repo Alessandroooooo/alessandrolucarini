@@ -358,7 +358,6 @@ a:hover {
 
 #pres a {
   text-decoration: underline;
-  color: #222;
   cursor: pointer;
 }
 .video-container {
@@ -398,7 +397,6 @@ iframe {
 
   #pres a {
     text-decoration: underline;
-    text-decoration-color: #222;
     cursor: pointer;
   }
 
