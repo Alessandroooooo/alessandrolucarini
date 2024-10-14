@@ -189,9 +189,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -202,6 +202,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -291,6 +292,7 @@ a:hover {
 }
 
 #works {
+  height: 100vh;
   box-sizing: border-box;
   margin-left: 25vw;
   padding: 40px;
@@ -314,7 +316,7 @@ a:hover {
   margin-bottom: 60px;
 }
 
-.caption-wrapper > button {
+.caption-wrapper>button {
   margin-top: 1em;
   height: 30px;
   width: 30px;
@@ -324,7 +326,7 @@ a:hover {
   cursor: pointer;
 }
 
-.caption-wrapper > .carousel-caption {
+.caption-wrapper>.carousel-caption {
   float: left;
 }
 
@@ -360,6 +362,7 @@ a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
 .video-container {
   position: relative;
   width: 100%;
@@ -430,7 +433,7 @@ iframe {
     margin-bottom: 60px;
   }
 
-  .caption-wrapper > button {
+  .caption-wrapper>button {
     margin-top: 1em;
     height: 30px;
     width: 30px;
@@ -440,7 +443,7 @@ iframe {
     cursor: pointer;
   }
 
-  .caption-wrapper > .carousel-caption {
+  .caption-wrapper>.carousel-caption {
     float: left;
   }
 

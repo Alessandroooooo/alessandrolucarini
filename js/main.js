@@ -48,6 +48,7 @@ document.getElementById("pub-button").addEventListener(
     document.getElementById("videos").style.display = "none";
     document.getElementById("posters").style.display = "none";
     document.getElementById("publications").style.display = "block";
+    document.getElementById("illustrations").style.display = "none";
 
     const carousels = document.querySelectorAll(".main-carousel");
 
@@ -70,6 +71,7 @@ document.getElementById("vid-button").addEventListener(
     document.getElementById("publications").style.display = "none";
     document.getElementById("posters").style.display = "none";
     document.getElementById("videos").style.display = "block";
+    document.getElementById("illustrations").style.display = "none";
 
     const carousels = document.querySelectorAll(".main-carousel");
 
@@ -92,6 +94,30 @@ document.getElementById("pos-button").addEventListener(
     document.getElementById("videos").style.display = "none";
     document.getElementById("publications").style.display = "none";
     document.getElementById("posters").style.display = "block";
+    document.getElementById("illustrations").style.display = "none";
+
+    const carousels = document.querySelectorAll(".main-carousel");
+
+    carousels.forEach((carousel) => {
+      var flkty = new Flickity(carousel, {
+        cellAlign: "left",
+        contain: true,
+        freeScroll: true,
+        pageDots: false,
+      });
+      flkty.resize();
+    });
+  },
+  false
+);
+
+document.getElementById("ill-button").addEventListener(
+  "click",
+  function () {
+    document.getElementById("videos").style.display = "none";
+    document.getElementById("publications").style.display = "none";
+    document.getElementById("posters").style.display = "none";
+    document.getElementById("illustrations").style.display = "block";
 
     const carousels = document.querySelectorAll(".main-carousel");
 
@@ -111,3 +137,4 @@ document.getElementById("pos-button").addEventListener(
 document.getElementById("publications").style.display = "none";
 document.getElementById("videos").style.display = "none";
 document.getElementById("posters").style.display = "none";
+document.getElementById("illustrations").style.display = "none";
