@@ -11,18 +11,28 @@
    Base styles: opinionated defaults
    ========================================================================== */
 @font-face {
-  font-family: Karrik-Regular;
-  src: url(../fonts/Karrik-Regular.woff) format("woff");
+  font-family: Neue-Haas;
+  font-style: normal;
+  src: url(../fonts/NeueHaasDisplay-Roman.woff) format("woff");
+  src: url(../fonts/NeueHaasDisplay-Roman.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: Necto;
-  src: url(../fonts/Necto-Mono.woff) format("woff");
+  font-family: Neue-Haas;
+  font-style: italic;
+  src: url(../fonts/NeueHaasDisplay-RomanItalic.woff) format("woff");
+  src: url(../fonts/NeueHaasDisplay-RomanItalic.woff2) format("woff2");
+}
+
+
+@font-face {
+  font-family: Neue-Haas;
+  src: url(../fonts/Neue-Haas-Mono.woff) format("woff");
 }
 
 body {
   background-color: whitesmoke;
-  font-family: Karrik-Regular;
+  font-family: Neue-Haas;
 }
 
 html {
@@ -353,7 +363,7 @@ a:hover {
   z-index: 99;
   background-color: whitesmoke;
   border: 2px solid #00a00c;
-  font-family: "Necto";
+  font-family: "Neue-Haas";
   font-size: 14px;
   line-height: 1.5;
   color: #222;
@@ -364,7 +374,7 @@ a:hover {
 }
 
 .info {
-  font-family: "Necto";
+  font-family: "Neue-Haas";
   font-size: 13px;
   line-height: 0.5;
   color: #222;
@@ -393,7 +403,7 @@ iframe {
 @media only screen and (max-width: 600px) {
   body {
     background-color: whitesmoke;
-    font-family: Karrik-Regular;
+    font-family: Neue-Haas;
   }
 
   html {
@@ -427,7 +437,7 @@ iframe {
     box-sizing: border-box;
     margin-left: 0;
     padding: 0px 20px 20px 20px;
-    font-family: Karrik-Regular;
+    font-family: Neue-Haas;
     font-size: 15px;
   }
 
@@ -468,7 +478,7 @@ iframe {
   }
 
   .info {
-    font-family: "Necto";
+    font-family: "Neue-Haas";
     font-size: 15px;
     line-height: 0.5;
     color: #222;

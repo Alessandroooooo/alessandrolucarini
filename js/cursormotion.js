@@ -17,9 +17,6 @@ frame.addEventListener("mousemove", (event) => {
     console.log();
 
     if (event.clientX > rect.left) {
-        // mouseX = event.clientX - (imgSize[1] / 2)
-        // mouseY = event.clientY - (imgSize[0] / 2)
-
         mouseX = event.pageX - (imgSize[1] / 2)
         mouseY = event.pageY - (imgSize[0] / 2)
 
@@ -27,6 +24,7 @@ frame.addEventListener("mousemove", (event) => {
             distance = Math.sqrt(Math.pow((mouseX - imgPos[0]), 2) + Math.pow((mouseY - imgPos[1]), 2))
 
             if (distance > 70) {
+                var img = new Image(imgSize[1], imgSize[0]);
                 var img = new Image(imgSize[1], imgSize[0]);
                 img.style.position = "absolute"
                 imgPos = [mouseX, mouseY]
