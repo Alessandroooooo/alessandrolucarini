@@ -291,10 +291,22 @@ a:hover {
   max-width: 100%;
 }
 
-#works {
+
+#motion {
   height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+#works {
+
   box-sizing: border-box;
   margin-left: 25vw;
+
+}
+
+.work {
   padding: 40px;
 }
 
@@ -405,6 +417,10 @@ iframe {
 
   #pres img {
     max-width: 65%;
+  }
+
+  #motion {
+    display: none;
   }
 
   #works {
