@@ -189,9 +189,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -202,6 +202,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -290,9 +291,22 @@ a:hover {
   max-width: 100%;
 }
 
+
+#motion {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+
 #works {
+
   box-sizing: border-box;
   margin-left: 25vw;
+
+}
+
+.work {
   padding: 40px;
 }
 
@@ -314,7 +328,7 @@ a:hover {
   margin-bottom: 60px;
 }
 
-.caption-wrapper > button {
+.caption-wrapper>button {
   margin-top: 1em;
   height: 30px;
   width: 30px;
@@ -324,7 +338,7 @@ a:hover {
   cursor: pointer;
 }
 
-.caption-wrapper > .carousel-caption {
+.caption-wrapper>.carousel-caption {
   float: left;
 }
 
@@ -360,6 +374,7 @@ a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
 .video-container {
   position: relative;
   width: 100%;
@@ -404,6 +419,10 @@ iframe {
     max-width: 65%;
   }
 
+  #motion {
+    display: none;
+  }
+
   #works {
     box-sizing: border-box;
     margin-left: 0;
@@ -430,7 +449,7 @@ iframe {
     margin-bottom: 60px;
   }
 
-  .caption-wrapper > button {
+  .caption-wrapper>button {
     margin-top: 1em;
     height: 30px;
     width: 30px;
@@ -440,7 +459,7 @@ iframe {
     cursor: pointer;
   }
 
-  .caption-wrapper > .carousel-caption {
+  .caption-wrapper>.carousel-caption {
     float: left;
   }
 
