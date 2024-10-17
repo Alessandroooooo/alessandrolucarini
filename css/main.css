@@ -24,12 +24,6 @@
   src: url(../fonts/NeueHaasDisplay-RomanItalic.woff2) format("woff2");
 }
 
-
-@font-face {
-  font-family: Neue-Haas;
-  src: url(../fonts/Neue-Haas-Mono.woff) format("woff");
-}
-
 body {
   background-color: whitesmoke;
   font-family: Neue-Haas;
