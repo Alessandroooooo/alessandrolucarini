@@ -5,7 +5,7 @@ let frame = document.getElementById("motion")
 
 let imgIndex = 1
 let imgSize = [270, 355]
-let imageSrc = "../img/Animation/" + imgIndex + ".jpg"
+let imageSrc = "img/Animation/" + imgIndex + ".jpg"
 let firstImg = true
 
 let imgPos = [0, 0]
@@ -39,7 +39,7 @@ frame.addEventListener("mousemove", (event) => {
                     imgIndex = 1
                 }
                 imgIndex++
-                imageSrc = "./img/Animation/" + imgIndex + ".jpg"
+                imageSrc = "img/Animation/" + imgIndex + ".jpg"
 
                 disappear(img)
             }

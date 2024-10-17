@@ -2,7 +2,7 @@ let imgLoad = document.getElementById("loader-img")
 let imgNo = 0
 
 let animation = setInterval(function () {
-    imgLoad.src = "./img/Animation/" + imgNo + ".jpg"
+    imgLoad.src = "img/Animation/" + imgNo + ".jpg"
 
     if (imgNo >= 82) {
         imgNo = 0
