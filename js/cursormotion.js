@@ -5,11 +5,15 @@ let frame = document.getElementById("motion")
 
 let imgIndex = 1
 let imgSize = [270, 355]
-let imageSrc = "img/Animation/" + imgIndex + ".jpg"
+let imageSrc = "../img/Animation/" + imgIndex + ".jpg"
 let firstImg = true
 
 let imgPos = [0, 0]
 let distance
+
+const imgUrl = new URL(imageSrc, import.meta.url).href
+console.log(imgUrl);
+
 
 frame.addEventListener("mouseleave", () => { removeEventListener("mousemove", frame) })
 frame.addEventListener("mousemove", (event) => {
@@ -21,6 +25,9 @@ frame.addEventListener("mousemove", (event) => {
         mouseY = event.pageY - (imgSize[0] / 2)
 
         if (!firstImg) {
+            imageSrc = "../img/Animation/" + imgIndex + ".jpg"
+            const imgUrl = new URL(imageSrc, import.meta.url).href
+
             distance = Math.sqrt(Math.pow((mouseX - imgPos[0]), 2) + Math.pow((mouseY - imgPos[1]), 2))
 
             if (distance > 70) {
@@ -30,7 +37,7 @@ frame.addEventListener("mousemove", (event) => {
                 imgPos = [mouseX, mouseY]
                 img.style.top = imgPos[1] + "px"
                 img.style.left = imgPos[0] + "px"
-                img.src = imageSrc
+                img.src = imgUrl
                 img.style.opacity = 1
 
                 frame.appendChild(img)
@@ -39,7 +46,7 @@ frame.addEventListener("mousemove", (event) => {
                     imgIndex = 1
                 }
                 imgIndex++
-                imageSrc = "img/Animation/" + imgIndex + ".jpg"
+
 
                 disappear(img)
             }
