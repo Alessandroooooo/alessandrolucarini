@@ -1,13 +1,14 @@
 let imgLoad = document.getElementById("loader-img")
+let imgNo = 0
 
 let animation = setInterval(function () {
-    imgLoad.src = "./img/Animation/" + imgIndex + ".jpg"
+    imgLoad.src = "./img/Animation/" + imgNo + ".jpg"
 
-    if (imgIndex >= 82) {
-        imgIndex = 0
+    if (imgNo >= 82) {
+        imgNo = 0
     } else {
 
-        imgIndex++
+        imgNo++
     }
 
 }, 50);
