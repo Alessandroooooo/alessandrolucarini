@@ -5,7 +5,7 @@ let frame = document.getElementById("motion")
 
 let imgIndex = 1
 let imgSize = [270, 355]
-let imageSrc = "./img/Animation/" + imgIndex + ".jpg"
+let imageSrc = "../img/Animation/" + imgIndex + ".jpg"
 let firstImg = true
 
 let imgPos = [0, 0]
@@ -35,7 +35,7 @@ frame.addEventListener("mousemove", (event) => {
 
                 frame.appendChild(img)
 
-                if (imgIndex >= 318) {
+                if (imgIndex >= 82) {
                     imgIndex = 1
                 }
                 imgIndex++
