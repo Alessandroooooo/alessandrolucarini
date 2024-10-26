@@ -12,10 +12,6 @@
   <meta property="og:url" content="" />
   <meta property="og:image" content="" />
 
-  <link rel="manifest" href="site.webmanifest" />
-  <link rel="icon" href="img/logo_a.webp" />
-  <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
@@ -27,11 +23,7 @@
 <body>
 
   <div id="loader">
-    <div>
-      <p>Loading</p>
-      <img id="loader-img" src=" ./img/Animation/1.jpg" alt="">
-
-    </div>
+    <img id="loader-img" src=" ./img/Animation/1.jpg" alt="">
   </div>
 
 
@@ -47,19 +39,19 @@
       <br>
 
 
-      <span class="material-icons"> subdirectory_arrow_right </span><a href="#placeholder" id="pub-button"><span
-          style="color: black">
+      <span class="material-icons"> subdirectory_arrow_right </span><a href="#placeholder"
+        onclick="workFunction('publications')" id="pub-button"><span style="color: black">
           publications </span></a>
       <br>
-      <span class="material-icons"> subdirectory_arrow_right </span><a href="#placeholder" id="pos-button"> <span
-          style="color: black">posters </span> </a>
+      <span class="material-icons"> subdirectory_arrow_right </span><a href="#placeholder"
+        onclick="workFunction('posters')" id="pos-button"> <span style="color: black">posters </span> </a>
       <br>
-      <span class="material-icons"> subdirectory_arrow_right </span><a href="#placeholder" id="vid-button"><span
-          style="color: black">
+      <span class="material-icons"> subdirectory_arrow_right </span><a href="#placeholder"
+        onclick="workFunction('videos')" id="vid-button"><span style="color: black">
           videos</span> </a>
       <br>
-      <span class="material-icons"> subdirectory_arrow_right </span><a href="#placeholder" id="ill-button"><span
-          style="color: black">
+      <span class="material-icons"> subdirectory_arrow_right </span><a href="#placeholder"
+        onclick="workFunction('illustrations')" id="ill-button"><span style="color: black">
           illustrations</span> </a>
 
     </p>

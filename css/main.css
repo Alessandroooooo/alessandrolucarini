@@ -27,6 +27,7 @@
 body {
   background-color: whitesmoke;
   font-family: Neue-Haas;
+  height: auto;
 }
 
 html {
@@ -277,7 +278,8 @@ textarea {
 
 #pres {
   width: 25vw;
-  height: 100%;
+  /* height: 100%; */
+  overflow: scroll;
   box-sizing: border-box;
   position: fixed;
   padding: 20px 40px 50px 40px;
@@ -293,26 +295,20 @@ a:hover {
 
 #loader {
   height: 100vh;
-  left: 0;
-  right: 0;
-
+  width: 100vw;
   position: absolute;
   background-color: whitesmoke;
   z-index: 999;
-  margin-inline: auto;
-  align-items: center;
-}
-
-#loader>div {
-  position: relative;
-  margin: 0 auto;
   text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
+
 }
 
 #loader-img {
-  height: 270px;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  margin: 0 auto;
 }
 
 #pres img {
@@ -341,6 +337,7 @@ a:hover {
 }
 
 .work {
+  display: none;
   padding: 40px;
 }
 
